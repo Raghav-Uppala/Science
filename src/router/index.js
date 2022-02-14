@@ -1,21 +1,24 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
+import nav from "../views/nav.vue"; //importing nav component
+import chemistry from "../views/chemistry.vue"; //importing chemistry componentf
+import PeriodicTable from "@/components/chemistry/PeriodicTable.vue";
 
-const routes = [
+const routes = [ 
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    name: "nav",
+    component: nav,
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    path: "/chemistry",
+    name: "chemistry",
+    component: chemistry,
   },
+  {
+    path: "/chemistry/PeriodicTable",
+    name: "PeriodicTable",
+    component: PeriodicTable,
+  }
 ];
 
 const router = createRouter({

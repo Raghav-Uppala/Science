@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import nav from "../views/nav.vue"; //importing nav component
 import chemistry from "../views/chemistry.vue"; //importing chemistry componentf
-import PeriodicTable from "@/components/chemistry/PeriodicTable.vue";
+import PeriodicTableVisualizer from "@/components/chemistry/PeriodicTableVisualizer.vue"; //importing PeriodicTableVisualizer component
 
 const routes = [ 
   {
@@ -17,7 +17,7 @@ const routes = [
   {
     path: "/chemistry/PeriodicTable",
     name: "PeriodicTable",
-    component: PeriodicTable,
+    component: PeriodicTableVisualizer,
   }
 ];
 

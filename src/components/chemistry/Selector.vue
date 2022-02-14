@@ -5,9 +5,7 @@
 <script>
 
 export default {
-  name: 'PeriodicTable',
-  components: {
-  }, 
+  name: 'Selector'
 }
 
 </script>
